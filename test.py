@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 
-# Helper Functions
 def text_to_bin(text):
     """Convert text to binary string"""
     return ''.join(format(ord(c), '08b') for c in text)
@@ -65,8 +64,8 @@ def retrieve_credentials(image_path, website):
     return credentials.get(website, "No credentials found")
 
 # Example Usage
-image_file = "input_image.png"
-output_file = "stego_image.png"
+image_file = "cartoon_image.png"
+output_file = "passwordEncryptedImage.png"
 
 # Adding credentials over time
 credentials_list = [("amazon.com", "user_amz", "pass123"), ("gmail.com", "user_gmail", "pass456")]
